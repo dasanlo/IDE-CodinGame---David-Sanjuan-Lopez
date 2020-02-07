@@ -1,1 +1,1 @@
-Aquí se mostraran las imágenes procesadas
+Aquí se mostraran las imágenes procesadas. Una imagen solo podrá ser procesada una vez
