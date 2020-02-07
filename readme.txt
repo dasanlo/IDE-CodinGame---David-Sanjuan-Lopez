@@ -31,7 +31,7 @@ Nota: será necesario tener instalado MongoDB como base de datos. Ya que la pers
 NOTAS DEL DESARROLLADOR
 ---------------------------
 
-Para el tratamiento de las fotos, se pasará unicamente el path relativo de la imagen que se encuentra ubicado en directorio del proyecto (./input). Tal y como se indican en las peticiones GET y POST de prueba. El enunciado del problema solo indica que se recogerá la información de la petición y no indica la forma, por lo que he optado por la forma más simple.
+Para el tratamiento de las fotos, se pasará unicamente el path relativo de la imagen que se encuentra ubicado en directorio del proyecto (./input). Tal y como se indican en las peticiones GET y POST de prueba. El enunciado del problema solo indica que se recogerá la información de la petición y no indica la forma, por lo que he optado por la forma más simple. Una imagen solo podrá ser procesada una unica vez, de lo contrario se obtendrá el error: "Image processed"
 
 
 
@@ -43,11 +43,23 @@ A continuación se propone un conjunto de datos para comprobar las inserciones y
 
 Insercion de una tarea:
 
+Ejemplo 1:
+
 [POST] http://localhost:8080/api/task
 
 {
     "imageInputPath": "./input/0858020250_1_1_1.jpg"
 }
+
+
+Ejemplo 2: 
+
+[POST] http://localhost:8080/api/task
+
+{
+    "imageInputPath": "./input/0858020504_1_1_1"
+}
+
 
 
 Obtener estado de una tarea:
@@ -75,3 +87,8 @@ Antes la falta de ciertos datos, se ha utilizado aquella estructura o forma mas 
 
 
 
+
+DIRECTORIO GITHUB
+----------------------
+
+https://github.com/dasanlo/IDE-CodinGame---David-Sanjuan-Lopez
