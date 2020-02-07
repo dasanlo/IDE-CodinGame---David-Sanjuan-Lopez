@@ -1,0 +1,1 @@
+Aquí se almacenan las imagenes para ser procesadas. De las cuales se pasará la ruta relativa en la petición POST
